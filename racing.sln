@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{6210325F-74DE-8222-44CB-118F84AEA1DA}") = "racing", "Assembly-CSharp-firstpass.csproj", "{3E3F09D1-7F31-A8D6-33DC-4E8832716CFD}"
+EndProject
+Project("{6210325F-74DE-8222-44CB-118F84AEA1DA}") = "racing", "Assembly-CSharp.csproj", "{5BFD08C7-258E-5FC5-FCAA-33175E8EA122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E3F09D1-7F31-A8D6-33DC-4E8832716CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3F09D1-7F31-A8D6-33DC-4E8832716CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3F09D1-7F31-A8D6-33DC-4E8832716CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3F09D1-7F31-A8D6-33DC-4E8832716CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFD08C7-258E-5FC5-FCAA-33175E8EA122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFD08C7-258E-5FC5-FCAA-33175E8EA122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFD08C7-258E-5FC5-FCAA-33175E8EA122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFD08C7-258E-5FC5-FCAA-33175E8EA122}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
