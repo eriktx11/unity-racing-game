@@ -53,6 +53,8 @@
      <Compile Include="Assets\Scripts\EnemyCarMove.cs" />
      <Compile Include="Assets\Scripts\EnemyCarSpawner.cs" />
      <Compile Include="Assets\Scripts\EnemyDestroyer.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\MenuMngr.cs" />
      <Compile Include="Assets\Scripts\ParticleHit.cs" />
      <Compile Include="Assets\Scripts\carController.cs" />
      <Compile Include="Assets\Scripts\enemyMove.cs" />
