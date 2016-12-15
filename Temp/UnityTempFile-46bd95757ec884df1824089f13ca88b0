@@ -94,6 +94,7 @@
 'Assets/Scripts/EnemyCarSpawner.cs'
 'Assets/Scripts/EnemyDestroyer.cs'
 'Assets/Scripts/Menu.cs'
+'Assets/Scripts/MenuMngr.cs'
 'Assets/Scripts/ParticleHit.cs'
 'Assets/Scripts/carController.cs'
 'Assets/Scripts/enemyMove.cs'
