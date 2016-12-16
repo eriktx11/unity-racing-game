@@ -13,9 +13,14 @@ public class MenuMngr : MonoBehaviour {
 	public void ShowMenu(Menu menu){
 
 		if (currentMenu != null) {
-
 			currentMenu = menu;
-			currentMenu.isOpen = true;
+
+			if (currentMenu.isOpen == true) {
+				currentMenu.isOpen = false;
+			} else {
+				currentMenu.isOpen = true;
+			}
+
 		} 
 	}
 
