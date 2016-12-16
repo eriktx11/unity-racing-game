@@ -22,7 +22,7 @@ public class Menu : MonoBehaviour {
 	
 	// Update is called once per frame
 	public void Update () {
-	
+
 		if(!_animator.GetCurrentAnimatorStateInfo(0).IsName("Open")){
 			_canvasGroup.blocksRaycasts = _canvasGroup.interactable = false;
 		}else{

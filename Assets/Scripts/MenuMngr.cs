@@ -12,12 +12,11 @@ public class MenuMngr : MonoBehaviour {
 
 	public void ShowMenu(Menu menu){
 
-		if(currentMenu!=null){
-			currentMenu.isOpen = false;
+		if (currentMenu != null) {
 
 			currentMenu = menu;
-			currentMenu.isOpen = false;
-		}
+			currentMenu.isOpen = true;
+		} 
 	}
 
 }
