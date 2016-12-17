@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\enemyMove.cs" />
      <Compile Include="Assets\Scripts\grabMove.cs" />
      <Compile Include="Assets\Scripts\manager.cs" />
+     <Compile Include="Assets\Scripts\spriteSwitch.cs" />
      <Compile Include="Assets\Scripts\trackMove.cs" />
      <Compile Include="Assets\Scripts\uiManager.cs" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />

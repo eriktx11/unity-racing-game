@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class carController : MonoBehaviour {
@@ -13,7 +14,6 @@ public class carController : MonoBehaviour {
 	public AudioManager cr;
 	public Blast cb;
 
-
 	bool currntPlatformAndroid = false;
 //	Rigidbody2D rb;
 
@@ -23,6 +23,7 @@ public class carController : MonoBehaviour {
 	//vertical position of the gameobject
 	private float yAxis;
 	public uiManager ui;
+
 
 	void Start(){
 		//save the y axis value of gameobject
@@ -73,6 +74,7 @@ public class carController : MonoBehaviour {
 				//as we do not want to change the y axis value based on touch position, reset it to original y axis value
 				endPoint.y = yAxis;
 			}
+				
 
 		}
 		//check if the flag for movement is true and the current gameobject position is not same as the clicked / tapped position

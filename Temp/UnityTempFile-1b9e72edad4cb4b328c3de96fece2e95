@@ -100,6 +100,7 @@
 'Assets/Scripts/enemyMove.cs'
 'Assets/Scripts/grabMove.cs'
 'Assets/Scripts/manager.cs'
+'Assets/Scripts/spriteSwitch.cs'
 'Assets/Scripts/trackMove.cs'
 'Assets/Scripts/uiManager.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'

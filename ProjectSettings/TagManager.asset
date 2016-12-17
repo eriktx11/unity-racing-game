@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy Car
+  - police-car-one
+  - police-car-two
   layers:
   - Default
   - TransparentFX
