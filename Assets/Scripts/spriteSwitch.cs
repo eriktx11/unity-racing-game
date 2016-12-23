@@ -6,6 +6,7 @@ public class spriteSwitch : MonoBehaviour {
 
 	private List<GameObject> models;
 	private int selectionIndex=0;
+	private GameObject isWrongWayCar;
 //	public Sprite animB;
 //	public Sprite nowPlaying;
 
@@ -22,6 +23,7 @@ public class spriteSwitch : MonoBehaviour {
 			t.gameObject.SetActive (false);
 		}
 		models [selectionIndex].SetActive (true);
+		isWrongWayCar = GameObject.FindGameObjectWithTag("police-car-one");
 	}
 	
 	// Update is called once per frame
@@ -40,6 +42,7 @@ public class spriteSwitch : MonoBehaviour {
 		selectionIndex = x;
 		models [selectionIndex].SetActive (true);
 
+		isWrongWayCar.SetActive(true);
 
 
 

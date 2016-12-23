@@ -30,7 +30,7 @@ public class MenuMngr : MonoBehaviour {
 			} else {
 				currentMenu.isOpen = true;
 				isRunning.SetActive(true);
-				//isWrongWayCar.SetActive(true);
+				isWrongWayCar.SetActive(true);
 			}
 
 
