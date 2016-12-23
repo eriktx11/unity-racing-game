@@ -31,6 +31,7 @@ public class spriteSwitch : MonoBehaviour {
 
 
 		if (selectionIndex == x) {
+			isWrongWayCar.SetActive(true);
 			return;
 		}
 
