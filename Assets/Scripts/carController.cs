@@ -14,6 +14,7 @@ public class carController : MonoBehaviour {
 	public AudioManager cr;
 	public Blast cb;
 
+
 	bool currntPlatformAndroid = false;
 //	Rigidbody2D rb;
 

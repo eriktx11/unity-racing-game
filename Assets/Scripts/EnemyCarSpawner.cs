@@ -27,7 +27,4 @@ public class EnemyCarSpawner : MonoBehaviour {
 
 	}
 
-
-
-
 }

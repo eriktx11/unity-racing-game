@@ -16,9 +16,17 @@ public class CarSpawner : MonoBehaviour {
 		delayTimer = 0.5f;
 		#endif
 		timer = delayTimer;
-
-
 	}
+
+	public void disable(){
+		
+//		GameObject origin = GameObject.FindGameObjectWithTag ("Spawner");
+//		origin.SetActive (false);
+
+
+		}
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,7 +39,5 @@ public class CarSpawner : MonoBehaviour {
 			Instantiate (cars[carNo], carPos, transform.rotation);
 			timer = delayTimer;
 		}
-
-
 	}
 }
