@@ -7,37 +7,88 @@ public class spriteSwitch : MonoBehaviour {
 	private List<GameObject> models;
 	private int selectionIndex=0;
 	private GameObject isWrongWayCar;
-//	public Sprite animB;
-//	public Sprite nowPlaying;
 
+	private GameObject audioObj;
+	private AudioSource audioSrc;
 
-	//private RaycastHit2D hit2d;
+	private void Awake(){
+//		audioObj = GameObject.FindGameObjectWithTag("chiefAuTag");
+//		audioSrc = audioObj.GetComponent<AudioSource>();
+//		audioSrc.enabled = false;
 
+	}
 
-	// Use this for initialization
 	private void Start () {
-//		this.gameObject.GetComponent<SpriteRenderer> ().sprite = nowPlaying;
+
 		models = new List<GameObject>();
 		foreach (Transform t in transform) {
 			models.Add (t.gameObject);
 			t.gameObject.SetActive (false);
 		}
 		models [selectionIndex].SetActive (true);
-		isWrongWayCar = GameObject.FindGameObjectWithTag("police-car-one");
+		isWrongWayCar = GameObject.FindGameObjectWithTag("carGroupTag");
 	}
 	
 	// Update is called once per frame
 	public void setNewCar (int x) {
 
 
-		if (selectionIndex == x) {
-			isWrongWayCar.SetActive(true);
-			return;
-		}
+//		if (selectionIndex == x) {
+//			isWrongWayCar.SetActive(true);
+//			return;
+//		}
 
 		if (x < 0 || x > models.Count) {
 			return;
 		}
+
+		switch (x) {
+		case 0: 
+			audioObj = GameObject.FindGameObjectWithTag("chiefAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag("policeRemixAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag ("policeAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = true;
+			audioSrc.Play ();
+			break;
+		case 1:
+			audioObj = GameObject.FindGameObjectWithTag("chiefAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag("policeAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag ("policeRemixAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = true;
+			audioSrc.Play ();
+			break;
+
+
+		case 2:	
+			audioObj = GameObject.FindGameObjectWithTag ("policeAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag ("policeRemixAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag ("chiefAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = true;
+			audioSrc.Play ();
+			break;
+		}
+
 
 		models [selectionIndex].SetActive (false);
 		selectionIndex = x;
@@ -45,18 +96,5 @@ public class spriteSwitch : MonoBehaviour {
 
 		isWrongWayCar.SetActive(true);
 
-
-
-		//mainCharacter = GameObject.Find("police-car").GetComponent("police-car");
-
-	//	if(Input.touchCount > 0){//(0).phase==TouchPhase.Began
-			//hit2d = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.GetTouch (0).position), Vector2.zero);
-//			if (hit2d.collider != null && hit2d.transform.gameObject.tag == "police-car-one") {
-//			gameObject.GetComponent<> = this.gameObject.GetComponent<Image> ();
-//			}
-//			if (hit2d.collider != null && hit2d.transform.gameObject.tag == "police-car-two") {
-//				this.gameObject.GetComponent<SpriteRenderer> ().sprite = animB;
-//			//}
-		//}
 	}
 }

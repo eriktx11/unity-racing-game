@@ -15,7 +15,7 @@ public class EnemyDestroyer : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 
-		if (col.gameObject.tag == "Enemy Car") {
+		if (col.gameObject.tag == "EnemyCar") {
 
 			Destroy (col.gameObject);
 		}

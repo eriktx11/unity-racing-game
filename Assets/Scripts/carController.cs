@@ -26,25 +26,24 @@ public class carController : MonoBehaviour {
 	public uiManager ui;
 
 
+
 	void Start(){
 		//save the y axis value of gameobject
 		yAxis = gameObject.transform.position.y;
+
 	}
 
 
 
 	void Awake(){
-
-//		rb = GetComponent<Rigidbody2D> ();
-
 		#if UNITY_ANDROID || UNITY_IPHONE
 				currntPlatformAndroid = true;
 		#else
 				currentPlatformAndroid = false;
 		#endif
 
-
 		cr.carSound.Play ();
+
 	
 	}
 
@@ -114,14 +113,12 @@ public class carController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 
-		if (col.gameObject.tag == "Enemy Car") {
-			//Destroy (gameObject);
+		if (col.gameObject.tag == "EnemyCar") {
 
 			gameObject.SetActive(false);
 
 			ui.gameOverActivated();
 			cr.carSound.Stop();
-			//crashSound;
 			cb.blast.Play ();
 			pr.crashParticles.Play();
 		}
