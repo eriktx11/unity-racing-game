@@ -12,6 +12,7 @@ TagManager:
   - policeAuTag
   - chiefAuTag
   - policeRemixAuTag
+  - roosterAuTag
   layers:
   - Default
   - TransparentFX

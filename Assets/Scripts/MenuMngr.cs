@@ -41,6 +41,10 @@ public class MenuMngr : MonoBehaviour {
 				audioSrc = audioObj.GetComponent<AudioSource> ();
 				audioSrc.enabled = false;
 
+				audioObj = GameObject.FindGameObjectWithTag("roosterAuTag");
+				audioSrc = audioObj.GetComponent<AudioSource>();
+				audioSrc.enabled = false;
+
 			} else {
 				currentMenu.isOpen = true;
 				isRunning.SetActive(true);
