@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
+using UnityEngine.UI;
 
 	// Deriving the Purchaser class from IStoreListener enables it to receive messages from Unity Purchasing.
 public class UnlockIAP : MonoBehaviour, IStoreListener
@@ -9,14 +10,21 @@ public class UnlockIAP : MonoBehaviour, IStoreListener
 	public static UnlockIAP Instance{set;get;}
 	private static IStoreController m_StoreController;          // The Unity Purchasing system.
 	private static IExtensionProvider m_StoreExtensionProvider; // The store-specific Purchasing subsystems.
+	private GameObject[] charObj;
 
 	private void Awake(){
+
 		Instance = this;
 	}
 	public static string spirits_store = "unlock_spirits";
 
 	void Start()
 	{
+		charObj = GameObject.FindGameObjectsWithTag("charactersTag");
+		foreach (GameObject btn in charObj) {
+			btn.GetComponent<Button>().interactable = false;
+		}
+
 		// If we haven't set up the Unity Purchasing reference
 		if (m_StoreController == null)
 		{
