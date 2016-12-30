@@ -48,6 +48,10 @@ public class spriteSwitch : MonoBehaviour {
 			audioSrc = audioObj.GetComponent<AudioSource>();
 			audioSrc.enabled = false;
 
+			audioObj = GameObject.FindGameObjectWithTag("ballAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
 			audioObj = GameObject.FindGameObjectWithTag("roosterAuTag");
 			audioSrc = audioObj.GetComponent<AudioSource>();
 			audioSrc.enabled = false;
@@ -63,6 +67,10 @@ public class spriteSwitch : MonoBehaviour {
 			break;
 		case 1:
 			audioObj = GameObject.FindGameObjectWithTag("chiefAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag("ballAuTag");
 			audioSrc = audioObj.GetComponent<AudioSource>();
 			audioSrc.enabled = false;
 
@@ -86,6 +94,10 @@ public class spriteSwitch : MonoBehaviour {
 			audioSrc = audioObj.GetComponent<AudioSource> ();
 			audioSrc.enabled = false;
 
+			audioObj = GameObject.FindGameObjectWithTag("ballAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
 			audioObj = GameObject.FindGameObjectWithTag ("policeRemixAuTag");
 			audioSrc = audioObj.GetComponent<AudioSource> ();
 			audioSrc.enabled = false;
@@ -105,6 +117,10 @@ public class spriteSwitch : MonoBehaviour {
 			audioSrc = audioObj.GetComponent<AudioSource> ();
 			audioSrc.enabled = false;
 
+			audioObj = GameObject.FindGameObjectWithTag("ballAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
 			audioObj = GameObject.FindGameObjectWithTag ("policeRemixAuTag");
 			audioSrc = audioObj.GetComponent<AudioSource> ();
 			audioSrc.enabled = false;
@@ -118,6 +134,30 @@ public class spriteSwitch : MonoBehaviour {
 			audioSrc.enabled = true;
 			audioSrc.Play ();
 			break;
+
+		case 5:
+			audioObj = GameObject.FindGameObjectWithTag ("policeAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag("roosterAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag ("policeRemixAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource> ();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag("chiefAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = false;
+
+			audioObj = GameObject.FindGameObjectWithTag("ballAuTag");
+			audioSrc = audioObj.GetComponent<AudioSource>();
+			audioSrc.enabled = true;
+			audioSrc.Play ();
+			break;
+			
 		}
 
 
