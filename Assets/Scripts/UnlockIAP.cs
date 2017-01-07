@@ -130,6 +130,10 @@ public class UnlockIAP : MonoBehaviour, IStoreListener
 		// A consumable product has been purchased by this user.
 		if (String.Equals(args.purchasedProduct.definition.id, spirits_store, StringComparison.Ordinal))
 		{
+			charObj = GameObject.FindGameObjectsWithTag("charactersTag");
+			foreach (GameObject btn in charObj) {
+				btn.GetComponent<Button>().interactable = true;
+			}
 			Debug.Log("You just unlocked all sprites.");
 
 		}

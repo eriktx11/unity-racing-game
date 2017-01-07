@@ -103,7 +103,7 @@ GameObject:
   - 114: {fileID: 8840715}
   m_Layer: 5
   m_Name: Ball
-  m_TagString: charatersTag
+  m_TagString: charactersTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3262,7 +3262,7 @@ GameObject:
   - 114: {fileID: 450746318}
   m_Layer: 5
   m_Name: Rooster
-  m_TagString: charatersTag
+  m_TagString: charactersTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
